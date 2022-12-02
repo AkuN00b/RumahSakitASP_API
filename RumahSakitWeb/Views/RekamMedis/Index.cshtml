@@ -1,0 +1,50 @@
+﻿@model IEnumerable<RekamMedis>
+
+@{
+    ViewData["Title"] = "Master Rekam Medis";
+}
+
+<span class="h1 mt-3 mb-3">@ViewData["Title"]</span>
+
+<span class="float-end mt-3 mb-3">
+    <a class="btn btn-success" asp-controller="RekamMedis" asp-action="Create"><i class="fa-solid fa-plus"></i> Tambah Data</a>
+</span>
+
+<table class="table table-bordered table-striped text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nama Dokter</th>
+            <th>Nama Pasien</th>
+            <th>Keluhan</th>
+            <th>Penanganan</th>
+            <th>Dibuat</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr><td colspan="7">Tidak ada data</td></tr>
+        }
+        else
+        {
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>@obj.ID</td>
+                    <td>@obj.DokterID</td>
+                    <td>@obj.PasienID</td>
+                    <td>@obj.Keluhan</td>
+                    <td>@obj.Penanganan</td>
+                    <td>@obj.TglPeriksa.ToString("dd-MM-yyyy")</td>
+                    <td>
+                        <a asp-action="Edit" class="btn btn-warning" asp-route-id="@obj.ID"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@obj.ID"><i class="fa-solid fa-trash"></i> Delete</a>
+                    </td>
+                </tr>   
+            }
+        }
+    </tbody>
+</table>

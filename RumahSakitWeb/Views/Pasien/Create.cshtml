@@ -1,0 +1,35 @@
+﻿@model RumahSakitWeb.Models.Pasien
+
+@{
+    ViewData["Title"] = "Create Pasien";
+}
+
+<span class="h1 mt-3 mb-3">Master Pasien - Tambah Pasien</span>
+
+<span class="float-end mt-3 mb-3">
+    <a class="btn btn-primary" asp-controller="Pasien" asp-action="Index"><i class="fa-solid fa-left-long"></i> Kembali</a>
+</span>
+
+<form method="post" class="mt-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Nama</label>
+        <input type="text" class="form-control" asp-for="Nama">
+        <span asp-validation-for="Nama" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Alamat</label>
+        <input type="text" class="form-control" asp-for="Alamat">
+        <span asp-validation-for="Alamat" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tanggal Lahir</label>
+        <input type="date" class="form-control" asp-for="TanggalLahir">
+        <span asp-validation-for="TanggalLahir" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nomor HP</label>
+        <input type="text" class="form-control" asp-for="NomorHP">
+    </div>
+
+    <button type="submit" class="btn btn-success btn-block" ><i class="fa-regular fa-floppy-disk"></i> Submit</button>
+</form>

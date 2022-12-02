@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RumahSakitWeb", "RumahSakitWeb.csproj", "{B3A92325-DA2D-45BE-BE6E-819153AF3E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RumahSakitAPI", "..\RumahSakitAPI\RumahSakitAPI.csproj", "{379FBDA6-77AC-4442-9FBD-4B75EF97B6A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A92325-DA2D-45BE-BE6E-819153AF3E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A92325-DA2D-45BE-BE6E-819153AF3E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A92325-DA2D-45BE-BE6E-819153AF3E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A92325-DA2D-45BE-BE6E-819153AF3E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379FBDA6-77AC-4442-9FBD-4B75EF97B6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379FBDA6-77AC-4442-9FBD-4B75EF97B6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379FBDA6-77AC-4442-9FBD-4B75EF97B6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379FBDA6-77AC-4442-9FBD-4B75EF97B6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D9A0BA9-E94A-4327-AEC0-21C605992EF1}
+	EndGlobalSection
+EndGlobal

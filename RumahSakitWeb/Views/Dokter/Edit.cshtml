@@ -1,0 +1,35 @@
+﻿@model RumahSakitWeb.Models.Dokter
+
+@{
+    ViewData["Title"] = "Edit Dokter";
+}
+
+<span class="h1 mt-3 mb-3">Master Dokter - Edit Dokter</span>
+
+<span class="float-end mt-3 mb-3">
+    <a class="btn btn-primary" asp-controller="Dokter" asp-action="Index"><i class="fa-solid fa-left-long"></i> Kembali</a>
+</span>
+
+<form method="post" class="mt-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Nama</label>
+        <input type="text" class="form-control" asp-for="Nama">
+        <span asp-validation-for="Nama" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Spesialis</label>
+        <input type="text" class="form-control" asp-for="Spesialis">
+        <span asp-validation-for="Spesialis" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Alamat</label>
+        <input type="text" class="form-control" asp-for="Alamat">
+        <span asp-validation-for="Alamat" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nomor Izin</label>
+        <input type="text" class="form-control" asp-for="NomorIzin">
+    </div>
+
+    <button type="submit" class="btn btn-success btn-block" ><i class="fa-regular fa-floppy-disk"></i> Update</button>
+</form>
